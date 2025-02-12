@@ -2,8 +2,8 @@
 
 contacts = []
 
-def add_contact(name, phone):
-    contacts.append({"name": name, "phone": phone})
+def add_contact(name, phone, email):
+    contacts.append({"name": name, "phone": phone, "email":email})
     print(f"Contact '{name}' added successfully!")
 
 def view_contacts():
@@ -43,7 +43,7 @@ def main():
         if choice == '1':
             name = input("Enter name: ")
             phone = input("Enter phone number: ")
-            add_contact(name, phone)
+            add_contact(name, phone,email)
         elif choice == '2':
             view_contacts()
         elif choice == '3':

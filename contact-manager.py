@@ -2,7 +2,7 @@
 
 contacts = []
 
-def add_contact(name, phone, email):
+def add_contact(name, phone):
     contacts.append({"name": name, "phone": phone, "email":email})
     print(f"Contact '{name}' added successfully!")
 
